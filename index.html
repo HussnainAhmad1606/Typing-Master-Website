@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Test Your Typing Speed</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Typing Master</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+
+    <!-- 
+      ======================
+            hero section
+      ======================
+       -->
+   <div class="container my-4">
+    <div id="typing">
+      Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Labore odio ipsum at expedita, ducimus sapiente totam esse, natus iste necessitatibus, magni, nostrum. Sunt harum vitae assumenda non laudantium, dolores iste.
+    </div>
+      <div class="my-3 input-group input-group-lg">
+  <input type="text" class="form-control" id="userTyping" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+<button class="btn btn-dark"><span id="minutes">1</span>:<span id="seconds">00</span></button>
+<button class="btn btn-primary" onclick="window.location.reload()">Reload</button>
+
+</div>
+
+<div class="card" id="result" style="width: 20rem; height: 20rem; display: none;">
+
+    <center>
+      <h1 class="my-4"><span id="speed"></span> WPM</h1>
+
+
+   
+<table class="table">
+  <thead>
+  
+  </thead>
+  <tbody>
+    <tr >
+      <td>Keystrokes</td>
+      <td id="keystrokes">279</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td><span id="accuracy"></span>%</td>
+    </tr>
+    <tr>
+      <td>Correct Words</td>
+      <td id="correctWords">59</td>
+    </tr>
+    <tr>
+      <td>Wrong Words</td>
+      <td id="wrongWords" class="text-danger">1</td>
+    </tr>
+   
+  </tbody>
+</center>
+</table>
+  <!-- <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div> -->
+</div>
+   </div>
+   <script src="js/script.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
